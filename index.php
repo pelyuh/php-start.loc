@@ -1,5 +1,6 @@
 <?php
 
+// BEGIN: Lesson 2
 echo '<h2><b>' . 'Lesson 2: The Basics' . '</b></h2>';
 
 echo '<hr><br>';
@@ -110,6 +111,39 @@ echo $result = TEST1 + TEST2 . '<br>';
 
 
 // END: Lesson 2. Task 5: Constant
+// END: Lesson 2
+
+
+echo '<br><hr><br>';
+
+
+// BEGIN: Lesson 3
+
+echo '<h2><b>' . 'Lesson 3. Data type' . '</b></h2>';
+
+echo '<hr><br>';
+
+// BEGIN: Lesson 3. Task 1. Variables types
+
+echo '<b>' . 'Task 1. Variables types' . '</b><br><br>';
+
+$a = 152;
+$b = '152';
+$c = 'London';
+$d = array(152);
+$e = 15.2;
+$f = false;
+$g = true;
+
+echo 'Type of variable $a - ' . gettype($a) . '<br>';
+echo 'Type of variable $b - ' . gettype($b) . '<br>';
+echo 'Type of variable $c - ' . gettype($c) . '<br>';
+echo 'Type of variable $d - ' . gettype($d) . '<br>';
+echo 'Type of variable $e - ' . gettype($e) . '<br>';
+echo 'Type of variable $f - ' . gettype($f) . '<br>';
+echo 'Type of variable $g - ' . gettype($g) . '<br>';
+
+// END: Lesson 3. Task 1. Variables types
 
 
 echo '<br><hr><br>';
