@@ -1,5 +1,4 @@
 <?php
-
 // BEGIN: Lesson 2
 echo '<h2><b>' . 'Lesson 2: The Basics' . '</b></h2>';
 
@@ -189,6 +188,38 @@ $result .= $string1;
 echo $result;
 
 // END: Lesson 3. Task 3. Work with strings and variables
+
+
+echo '<br><hr><br>';
+
+
+// BEGIN: Lesson 3. Task 4. Work with arrays
+
+echo '<b>' . ' Task 4. Work with arrays' . '</b><br><br>';
+
+$a = array('test1.1', 'test1.2', 'test1.3', 'test1.4', 'test1.5',);
+$b = ['test2.1', 'test2.2', 'test2.3', 'test2.4', 'test2.5',];
+
+$a += ['el' => 'ogo'];
+$a['element'] = 60;
+
+unset($b[0]);
+
+echo $a[2] . '<br>';
+echo $b[2] . '<br>';
+
+echo '<pre>';
+print_r($a);
+echo '</pre>';
+
+echo '<pre>';
+print_r($b);
+echo '</pre>';
+
+echo 'Массив $a имеет ' . count($a) . ' елементов<br>';
+echo 'Массив $b имеет ' . count($b) . ' елементов<br>';
+
+// END: Lesson 3. Task 4. Work with arrays
 
 
 echo '<br><hr><br>';
