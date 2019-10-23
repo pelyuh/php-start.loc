@@ -61,7 +61,7 @@ $count = $one + $two + $three;
 
 echo $count . '<br>';
 
-echo $result = 2+6+2/5-1 . '<br>';
+echo $result = 2 + 6 + 2 / 5 - 1 . '<br>';
 
 // END: Lesson 2. Task 3: Operators
 
@@ -116,15 +116,15 @@ echo $result = TEST1 + TEST2 . '<br>';
 echo '<br><hr><br>';
 
 
-// BEGIN: Lesson 3
+// BEGIN: Урок 3: Типы данных
 
-echo '<h2><b>' . 'Lesson 3. Data type' . '</b></h2>';
+echo '<h2><b>' . 'Урок 3: Типы данных' . '</b></h2>';
 
 echo '<hr><br>';
 
-// BEGIN: Lesson 3. Task 1. Variables types
+// BEGIN: Урок 3. Задача 1: Типы переменных
 
-echo '<b>' . 'Task 1. Variables types' . '</b><br><br>';
+echo '<b>' . 'Задача 1: Типы переменных' . '</b><br><br>';
 
 $a = 152;
 $b = '152';
@@ -142,34 +142,34 @@ echo 'Type of variable $e - ' . gettype($e) . '<br>';
 echo 'Type of variable $f - ' . gettype($f) . '<br>';
 echo 'Type of variable $g - ' . gettype($g) . '<br>';
 
-// END: Lesson 3. Task 1. Variables types
+// END: Урок 3. Задача 1: Типы переменных
 
 
 echo '<br><hr><br>';
 
 
-// BEGIN: Lesson 3. Task 2. Work with strings and variables
+// BEGIN: Урок 3. Задача 2: Работа со строками и переменны
 
-echo '<b>' . ' Task 2. Work with strings and variables' . '</b><br><br>';
+echo '<b>' . 'Задача 2: Работа со строками и переменны' . '</b><br><br>';
 
 $a = 10;
 $b = 5;
 
 echo 'Дано: a = ' . $a . ', b = ' . $b . '<br>';
-echo 'Результат: ' . $b .' из ' . $a . 'ти студентов посетили лекцию.' . '<br>';
+echo 'Результат: ' . $b . ' из ' . $a . 'ти студентов посетили лекцию.' . '<br>';
 
 echo "Дано: a = $a , b = $b" . "<br>";
 echo "Результат: $b из {$a}ти студентов посетили лекцию." . "<br>";
 
-// END: Lesson 3. Task 2. Work with strings and variables
+// END: Урок 3. Задача 2: Работа со строками и переменны
 
 
 echo '<br><hr><br>';
 
 
-// BEGIN: Lesson 3. Task 3. Work with strings and variables
+// BEGIN: Урок 3. Задача 3: Работа со строками и переменны
 
-echo '<b>' . ' Task 3. Work with strings and variables' . '</b><br><br>';
+echo '<b>' . 'Задача 3: Работа со строками и переменны' . '</b><br><br>';
 
 $a = 'Доброе утро';
 $b = 'дамы';
@@ -187,15 +187,15 @@ $result .= $string1;
 
 echo $result;
 
-// END: Lesson 3. Task 3. Work with strings and variables
+// END: Урок 3. Задача 3: Работа со строками и переменны
 
 
 echo '<br><hr><br>';
 
 
-// BEGIN: Lesson 3. Task 4. Work with arrays
+// BEGIN: Урок 3. Задача 4: Работа с массивами
 
-echo '<b>' . ' Task 4. Work with arrays' . '</b><br><br>';
+echo '<b>' . 'Задача 4: Работа с массивами' . '</b><br><br>';
 
 $a = array('test1.1', 'test1.2', 'test1.3', 'test1.4', 'test1.5',);
 $b = ['test2.1', 'test2.2', 'test2.3', 'test2.4', 'test2.5',];
@@ -219,7 +219,38 @@ echo '</pre>';
 echo 'Массив $a имеет ' . count($a) . ' елементов<br>';
 echo 'Массив $b имеет ' . count($b) . ' елементов<br>';
 
-// END: Lesson 3. Task 4. Work with arrays
+// END: Урок 3. Задача 4: Работа с массивами
+// END: Урок 3: Типы данных
+
+
+echo '<br><hr><br>';
+
+
+// BEGIN: Урок 4: Условный оператор
+
+echo '<h2><b>' . 'Урок 4: Условный оператор' . '</b></h2>';
+
+echo '<hr><br>';
+
+// BEGIN: Урок 4. Задача 1: Вхождение числа в диапазон
+
+echo '<b>' . 'Задача 1: Вхождение числа в диапазон' . '</b><br><br>';
+
+define('MIN', 10);
+define('MAX', 50);
+
+$x = 50;
+
+if ($x == MIN or $x == MAX) {
+    echo '+-<br>';
+} elseif ($x < MIN or $x > MAX) {
+    echo '-<br>';
+} else {
+    echo '+<br>';
+}
+
+
+// END: Урок 4. Задача 1: Вхождение числа в диапазон
 
 
 echo '<br><hr><br>';
