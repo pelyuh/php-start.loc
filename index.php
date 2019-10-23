@@ -1,12 +1,12 @@
 <?php
-echo 'Lesson 2: The Basics';
+echo '<b>' . 'Lesson 2: The Basics' . '</b>';
 
 echo '<br><br><hr><br>';
 
 
 // BEGIN: Task 1. Comments
 
-echo 'Task 1. Comments' . '<br><br>';
+echo '<b>' . 'Task 1. Comments' . '</b><br><br>';
 
 /*
  * 23 October 2019 year
@@ -24,7 +24,7 @@ echo '<br><br><hr><br>';
 
 // BEGIN: Task 2. Variable naming
 
-echo 'Task 2. Variable naming' . '<br><br>';
+echo '<b>' . 'Task 2. Variable naming' . '</b><br><br>';
 
 $channelName = 'CNN';
 
@@ -45,12 +45,12 @@ echo '$phoneModel<br>';
 // END: Task 2. Variable naming
 
 
-echo '<br><br><hr><br>';
+echo '<br><hr><br>';
 
 
 // BEGIN: Task 3: Operators
 
-echo 'Task 3: Operators' . '<br><br>';
+echo '<b>' . 'Task 3: Operators' . '</b><br><br>';
 
 $one = 3;
 $two = 5;
@@ -65,4 +65,38 @@ echo $result = 2+6+2/5-1 . '<br>';
 // END: Task 3: Operators
 
 
-echo '<br><br><hr><br>';
+echo '<br><hr><br>';
+
+
+// BEGIN: Task 4: Copy values and copy values by reference
+
+echo '<b>' . 'Task 4: Copy values and copy values by reference' . '</b><br><br>';
+
+$a = 1;
+$b = 2;
+
+echo 'variable $a=' . $a . '<br>';
+echo 'variable $b=' . $b . '<br>';
+
+$c = $a;
+$d = &$b;
+
+echo 'variable $c=' . $c . '<br>';
+echo 'variable $d=' . $d . '<br><br>';
+
+$a = 3;
+$b = 4;
+
+echo 'variable $a=' . $a . '<br>';
+echo 'variable $b=' . $b . '<br>';
+echo 'variable $c=' . $c . '<br>';
+echo 'variable $d=' . $d . '<br>';
+
+// END: Task 4: Copy values and copy values by reference
+
+
+echo '<br><hr><br>';
+
+
+
+
