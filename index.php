@@ -403,21 +403,24 @@ $products = array(
     array('name' => 'Кроссовки', 'price' => '150', 'quantity' => 2),
 );
 
-function price($products)
+function totalPrice($products)
 {
-    $price = 0;
-    $quantity = 0;
+    $totalPrice = 0;
+    $totalQuantity = 0;
 
-    foreach ($products as $arr) {
-        $price += $arr['price'];
-        $quantity += $arr['quantity'];
+    foreach ($products as $product) {
+        $totalQuantity += $product['quantity'];
+        $totalPrice += $product['price'] * $product['quantity'];
     }
 
-    echo "Общая сумма покупок равна $price <br>";
-    echo "Общее количество выбранных товаров $quantity <br>";
+    return array('totalQuantity' => $totalQuantity, 'totalPrice' => $totalPrice);
 }
 
-price($products);
+$products = totalPrice($products);
+
+echo "Общая сумма покупок равна $ {$products['totalPrice']} <br>";
+echo "Общее количество выбранных товаров {$products['totalQuantity']} <br>";
+
 
 // END: Урок 6. Задача 1: Информация о товарах в корзине
 
@@ -466,3 +469,32 @@ quote($a, $b, $c);
 
 echo '<br><hr><br>';
 
+
+// BEGIN: Урок 6. Задача 3: Удаление отрицательных элементов из массива (вариант 1)
+
+echo '<b>' . 'Задача 3: Удаление отрицательных элементов из массива (вариант 1)' . '</b><br><br>';
+
+$digits = array(2, -10, -2, 4, 5, 1, 6, 200, 1.6, 95);
+
+echo '<pre>';
+print_r($digits);
+echo '</pre>';
+
+function deleteNegtives($digits)
+{
+    $digits;
+    foreach ($digits as $key => $digit) {
+        if ($digit < 0) {
+            unset($digits[$key]);
+        }
+    }
+    return $digits;
+}
+
+$digits = deleteNegtives($digits);
+
+echo '<pre>';
+print_r($digits);
+echo '</pre>';
+
+// END: Урок 6. Задача 3: Удаление отрицательных элементов из массива (вариант 1)
