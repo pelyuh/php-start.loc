@@ -104,8 +104,8 @@ echo '<br><hr><br>';
 
 echo '<b>' . 'Task 5: Constant' . '</b><br><br>';
 
-define(TEST1, 41);
-define(TEST2, 33);
+define('TEST1', 41);
+define('TEST2', 33);
 
 echo $result = TEST1 + TEST2 . '<br>';
 
@@ -163,6 +163,32 @@ echo "Дано: a = $a , b = $b" . "<br>";
 echo "Результат: $b из {$a}ти студентов посетили лекцию." . "<br>";
 
 // END: Lesson 3. Task 2. Work with strings and variables
+
+
+echo '<br><hr><br>';
+
+
+// BEGIN: Lesson 3. Task 3. Work with strings and variables
+
+echo '<b>' . ' Task 3. Work with strings and variables' . '</b><br><br>';
+
+$a = 'Доброе утро';
+$b = 'дамы';
+$c = 'и господ';
+
+echo $a . ', ' . $b . ' ' . $c . '<br>';
+
+$string1 = " и господ";
+$string2 = " дамы";
+$string3 = "Доброе утро,";
+
+$result = $string3;
+$result .= $string2;
+$result .= $string1;
+
+echo $result;
+
+// END: Lesson 3. Task 3. Work with strings and variables
 
 
 echo '<br><hr><br>';
