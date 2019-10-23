@@ -1,10 +1,11 @@
 <?php
-echo '<b>' . 'Lesson 2: The Basics' . '</b>';
 
-echo '<br><br><hr><br>';
+echo '<h2><b>' . 'Lesson 2: The Basics' . '</b></h2>';
+
+echo '<hr><br>';
 
 
-// BEGIN: Task 1. Comments
+// BEGIN: Lesson 2. Task 1. Comments
 
 echo '<b>' . 'Task 1. Comments' . '</b><br><br>';
 
@@ -16,13 +17,13 @@ echo '<b>' . 'Task 1. Comments' . '</b><br><br>';
 
 echo 'Hello World!';
 
-// END: Task 1. Comments
+// END: Lesson 2. Task 1. Comments
 
 
 echo '<br><br><hr><br>';
 
 
-// BEGIN: Task 2. Variable naming
+// BEGIN: Lesson 2. Task 2. Variable naming
 
 echo '<b>' . 'Task 2. Variable naming' . '</b><br><br>';
 
@@ -42,13 +43,13 @@ echo '$carColor<br>';
 echo '$waterTemperature<br>';
 echo '$phoneModel<br>';
 
-// END: Task 2. Variable naming
+// END: Lesson 2. Task 2. Variable naming
 
 
 echo '<br><hr><br>';
 
 
-// BEGIN: Task 3: Operators
+// BEGIN: Lesson 2. Task 3: Operators
 
 echo '<b>' . 'Task 3: Operators' . '</b><br><br>';
 
@@ -62,13 +63,13 @@ echo $count . '<br>';
 
 echo $result = 2+6+2/5-1 . '<br>';
 
-// END: Task 3: Operators
+// END: Lesson 2. Task 3: Operators
 
 
 echo '<br><hr><br>';
 
 
-// BEGIN: Task 4: Copy values and copy values by reference
+// BEGIN: Lesson 2. Task 4: Copy values and copy values by reference
 
 echo '<b>' . 'Task 4: Copy values and copy values by reference' . '</b><br><br>';
 
@@ -92,11 +93,23 @@ echo 'variable $b=' . $b . '<br>';
 echo 'variable $c=' . $c . '<br>';
 echo 'variable $d=' . $d . '<br>';
 
-// END: Task 4: Copy values and copy values by reference
+// END: Lesson 2. Task 4: Copy values and copy values by reference
 
 
 echo '<br><hr><br>';
 
 
+// BEGIN: Lesson 2. Task 5: Constant
+
+echo '<b>' . 'Task 5: Constant' . '</b><br><br>';
+
+define(TEST1, 41);
+define(TEST2, 33);
+
+echo $result = TEST1 + TEST2 . '<br>';
 
 
+// END: Lesson 2. Task 5: Constant
+
+
+echo '<br><hr><br>';
