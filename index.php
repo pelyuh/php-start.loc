@@ -147,3 +147,22 @@ echo 'Type of variable $g - ' . gettype($g) . '<br>';
 
 
 echo '<br><hr><br>';
+
+
+// BEGIN: Lesson 3. Task 2. Work with strings and variables
+
+echo '<b>' . ' Task 2. Work with strings and variables' . '</b><br><br>';
+
+$a = 10;
+$b = 5;
+
+echo 'Дано: a = ' . $a . ', b = ' . $b . '<br>';
+echo 'Результат: ' . $b .' из ' . $a . 'ти студентов посетили лекцию.' . '<br>';
+
+echo "Дано: a = $a , b = $b" . "<br>";
+echo "Результат: $b из {$a}ти студентов посетили лекцию." . "<br>";
+
+// END: Lesson 3. Task 2. Work with strings and variables
+
+
+echo '<br><hr><br>';
