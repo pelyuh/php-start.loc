@@ -369,7 +369,8 @@ echo '<br><hr><br>';
 
 echo '<b>' . 'Задача 3: Меню на сай' . '</b><br>';
 
-$menu = ['Кнопка 10', 'Кнопка 5', 'Кнопка 9', 'Кнопка 4', 'Кнопка 8', 'Кнопка 3', 'Кнопка 7', 'Кнопка 2', 'Кнопка 6', 'Кнопка 1',];
+$menu = ['Кнопка 10', 'Кнопка 5', 'Кнопка 9', 'Кнопка 4', 'Кнопка 8', 'Кнопка 3', 'Кнопка 7', 'Кнопка 2', 'Кнопка 6',
+    'Кнопка 1',];
 
 natsort($menu);
 
@@ -448,7 +449,6 @@ function quote($a, $b, $c)
         echo '<pre>';
         print_r($result);
         echo '</pre>';
-
     } elseif ($d == 0) {
         $x = -$b / (2 * $a);
         $result = [$x];
@@ -456,7 +456,6 @@ function quote($a, $b, $c)
         echo '<pre>';
         print_r($result);
         echo '</pre>';
-
     } else {
         echo 'False';
     }
@@ -482,7 +481,6 @@ echo '</pre>';
 
 function deleteNegtives($digits)
 {
-    $digits;
     foreach ($digits as $key => $digit) {
         if ($digit < 0) {
             unset($digits[$key]);
@@ -529,3 +527,23 @@ print_r($digits2);
 echo '</pre>';
 
 // END: Урок 6. Задача 4: Удаление отрицательных элементов из массива (вариант 2)
+// END: Урок 6.
+
+
+echo '<br><hr><br>';
+
+
+// BEGIN: Урок 8: HTTP, формы
+
+echo '<h2><b>' . 'Урок 8: HTTP, формы' . '</b></h2>';
+
+echo '<hr><br>';
+
+
+// BEGIN: Урок 8. Задача 1: Использование форм #1
+
+echo '<b>' . 'Задача 1: Использование форм #1' . '</b><br><br>';
+
+echo '<a href="lesson8.php">Click me</a>';
+
+// END: Урок 8. Задача 1: Использование форм #1
