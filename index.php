@@ -498,3 +498,34 @@ print_r($digits);
 echo '</pre>';
 
 // END: Урок 6. Задача 3: Удаление отрицательных элементов из массива (вариант 1)
+
+
+echo '<br><hr><br>';
+
+
+// BEGIN: Урок 6. Задача 4: Удаление отрицательных элементов из массива (вариант 2) (передача по ссылку)
+
+echo '<b>' . 'Задача 4: Удаление отрицательных элементов из массива (вариант 2)' . '</b><br><br>';
+
+$digits2 = array(2, -10, -2, 4, 5, 1, 6, 200, 1.6, 95);
+
+echo '<pre>';
+print_r($digits2);
+echo '</pre>';
+
+function deleteNegtives2(&$digits2)
+{
+    foreach ($digits2 as $key => $digit) {
+        if ($digit < 0) {
+            unset($digits2[$key]);
+        }
+    }
+}
+
+deleteNegtives2($digits2);
+
+echo '<pre>';
+print_r($digits2);
+echo '</pre>';
+
+// END: Урок 6. Задача 4: Удаление отрицательных элементов из массива (вариант 2)
